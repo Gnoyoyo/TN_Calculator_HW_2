@@ -35,14 +35,9 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         CURRENT_ACTION = ADDITION;
-
         final TextView tvNumber = (TextView) findViewById(R.id.tvNumber);
-        tvNumber.setMovementMethod(LinkMovementMethod.getInstance());
         final TextView tvOperation = (TextView) findViewById(R.id.tvOperation);
-        tvNumber.setMovementMethod(LinkMovementMethod.getInstance());
-
         final Button btn1 = (Button) findViewById(R.id.btn1);
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
